@@ -1,0 +1,121 @@
+@font-face{
+    font-family: "Faune";
+    font-weight: 400;
+    src:url('assets/faune-regular.woff');
+}
+
+@font-face{
+    font-family: "Faune";
+    font-weight: 400;
+    font-style: italic;
+    src:url('assets/faune-italic.woff');
+}
+
+@font-face{
+    font-family: "Faune";
+    font-weight: 700;
+    src:url('assets/faune-bold.woff');
+}
+
+
+@font-face{
+    font-family: "GTWalsheimPro";
+    font-weight: 400;
+    src:url('assets/GTWalsheimPro-Regular.ttf');
+}
+
+@font-face{
+    font-family: "GTWalsheimPro";
+    font-weight: 400;
+    font-style: italic;
+    src:url('assets/GTWalsheimPro-RegularOblique.ttf');
+}
+
+
+@font-face{
+    font-family: "GTWalsheimPro";
+    font-weight: 300;
+    src:url('assets/GTWalsheimPro-Light.ttf');
+}
+
+@font-face{
+    font-family: "GTWalsheimPro";
+    font-weight: 500;
+    src:url('assets/GTWalsheimPro-Medium.ttf');
+}
+
+
+
+
+
+body{
+
+    font-size: 1rem;
+    font-family: "GTWalsheimPro";
+    line-height: 1.5;
+    margin:40px 40px 40px 320px;
+    background-color: #2a2a2a;
+    color:white;
+}
+
+
+
+
+section.type_select{
+    position: fixed;
+    top:0;
+    left:0;
+    height:100vh;
+    background-color: #2a2a2a;
+    width:280px;
+
+    padding:40px;
+    border-right: 1px solid rgba(255,255,255,0.1);
+}
+
+h1{
+    font-weight: 500;
+    font-size:1.5rem;
+    
+}
+
+
+
+div.option{
+    margin:1.2rem 0 0 0;
+}
+
+label{
+    display:block;
+    margin-bottom: 0.3rem;
+}
+
+label span{
+    float:right;
+    font-style:italic;
+}
+ 
+input[type="text"]{
+    width:100%;
+    background-color: #575757;
+    color:inherit;
+    outline:none;
+    padding:0.3rem 0.5rem;
+}
+
+input[type="range"]{
+    width:100%;
+}
+
+
+textarea.output{
+    font-size: 64px;
+    background:none;
+    width:100%;
+    outline:none;
+    font-family: inherit;
+    color:inherit;
+    border:none;
+    min-height: 100vh;
+}
+
