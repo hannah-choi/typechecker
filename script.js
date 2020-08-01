@@ -7,6 +7,8 @@ const typeSizeNumber = document.querySelector('.typesize-number')
 const $lineHeightInput = document.querySelector(`input[name="lineheight"]`)
 const lineHeightNumber = document.querySelector('.lineheight-number')
 
+const $typeSelectorCheckbox = document.querySelector(`input[name="italic"]`)
+
 const originalText = $output.value;
 
 $textinput.addEventListener('keyup', function () {

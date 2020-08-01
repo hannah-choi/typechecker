@@ -85,6 +85,12 @@ div.option{
     margin:1.2rem 0 0 0;
 }
 
+div.option-checkbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 label{
     display:block;
     margin-bottom: 0.3rem;
