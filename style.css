@@ -113,6 +113,9 @@ input[type="range"]{
     width:100%;
 }
 
+select{
+    width:100%;
+}
 
 textarea.output{
     font-size: 64px;

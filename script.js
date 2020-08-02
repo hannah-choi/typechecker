@@ -9,6 +9,8 @@ const lineHeightNumber = document.querySelector('.lineheight-number')
 
 const $typeSelectorCheckbox = document.querySelector(`input[name="italic"]`)
 
+const $typefaceSelect = document.querySelector(`select[name="typeface"]`)
+
 const originalText = $output.value;
 
 $textinput.addEventListener('keyup', function () {
@@ -35,4 +37,12 @@ $typeSizeInput.addEventListener('input', function () {
 $lineHeightInput.addEventListener('input', function () {
     $output.style.lineHeight = this.value;
     lineHeightNumber.innerHTML = this.value;
+})
+
+$typeSelectorCheckbox.addEventListener('change', function () {
+    this.checked ? $output.style.fontStyle = "italic" : $output.style.fontStyle = "normal"
+})
+
+$typefaceSelect.addEventListener('input', function () {
+    $output.style.fontFamily = this.value;
 })
