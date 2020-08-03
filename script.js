@@ -7,6 +7,10 @@ const typeSizeNumber = document.querySelector('.typesize-number')
 const $lineHeightInput = document.querySelector(`input[name="lineheight"]`)
 const lineHeightNumber = document.querySelector('.lineheight-number')
 
+
+const $fontWeightInput = document.querySelector(`input[name="fontWeight"]`)
+const fontWeightNumber = document.querySelector('.fontWeight-number')
+
 const $typeSelectorCheckbox = document.querySelector(`input[name="italic"]`)
 
 const $typefaceSelect = document.querySelector(`select[name="typeface"]`)
@@ -33,6 +37,14 @@ $typeSizeInput.addEventListener('input', function () {
     typeSizeNumber.innerHTML = fontSize;
 
 })
+
+$fontWeightInput.addEventListener('input', function () {
+    let fontWeight = this.value + "px";
+    $output.style.fontWeight = fontWeight;
+    fontWeightNumber.innerHTML = fontWeight;
+
+})
+
 
 $lineHeightInput.addEventListener('input', function () {
     $output.style.lineHeight = this.value;
