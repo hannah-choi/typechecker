@@ -39,7 +39,7 @@ $typeSizeInput.addEventListener('input', function () {
 })
 
 $fontWeightInput.addEventListener('input', function () {
-    let fontWeight = this.value + "px";
+    let fontWeight = this.value;
     $output.style.fontWeight = fontWeight;
     fontWeightNumber.innerHTML = fontWeight;
 
